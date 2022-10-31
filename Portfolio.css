@@ -15,25 +15,36 @@
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
     --smaller-font-size: .75rem;
+    --black-font-color: rgb(78, 78, 78);
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    width: 1200px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
+
 
 }
 
 /* Navbar */
 #nav {
     height: var(--header-height);
-    margin: -0.4% -0.4% 2% -0.4%;
+    position: fixed;
+    min-width: 1200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    top: 0rem;
     align-items: center;
-    gap: 1.8rem;
-    margin-top: 0.5rem;
-    position: sticky;
+    background-color: white;
+    height: 80px;
 
 }
 
@@ -48,21 +59,29 @@ body {
 .nav-link,
 .name {
     text-decoration: none;
-    color: black;
+    color: var(--second-color);
     font-size: 20px;
+    font-weight: 510;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--first-color);
 }
 
 
 /* Home */
 .name {
-    color: #4070f4;
+    color: var(--first-color);
     font-size: 22px;
     font-weight: bolder;
 }
 
 #about {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 4rem 0rem;
 }
 
 
@@ -71,27 +90,30 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: left;
-    margin-left: 10rem;
+
 }
 
 #about>:last-child {
     display: flex;
     justify-content: right;
-    margin-right: 7rem;
+    width: 47%;
+    align-items: center;
 }
 
 .Name-color {
-    color: #4070f4;
+    color: var(--first-color);
 }
 
 #Profile-photo {
+    margin-top: 4rem;
     border-radius: 50%;
-    width: 60%;
+    width: 80%;
 }
 
 .home__title {
     font-size: 42px;
-    margin-bottom: -1.5rem;
+    color: var(--second-color);
+    margin-top: 5rem;
 }
 
 #Resume-button {
@@ -100,41 +122,208 @@ body {
     border-radius: 5px;
     border: none;
     font-size: 16px;
-    background-color: #4070f4;
+    background-color: var(--first-color);
     color: white;
     transition: all 0.3s ease;
 }
 
 #Resume-button:hover {
     cursor: pointer;
-    background-color: #335ac4;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #nav-toggle {
     display: none;
 }
 
+.heading {
+    border-bottom: 3px solid var(--first-color);
+}
+
 #Links {
-    margin-left: -3px;
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 1rem;
 }
 
 .box-icons {
-    font-size: 2.5rem;
-    color: rgb(86, 86, 86);
+    font-size: 2.2rem;
+    color: var(--second-color);
+    transition: 0.2s;
+}
+
+.box-icons:hover {
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+#About-Me {
+    margin: auto;
+    margin: 10rem auto 2.5rem auto;
+    color: var(--first-color);
+    text-align: center;
+    max-width: 100px;
+    transition: 0.2s;
+
+}
+
+
+
+#about-photo {
+    width: 100%;
+}
+
+#about-photo>img {
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+}
+
+#about-text {
+    text-align: justify;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#About-section {
+    margin-top: 20;
+    text-align: center;
+    gap: 25px;
+}
+
+#Project-Header {
+    max-width: fit-content;
+    margin: 3rem auto 1.5rem auto;
+    color: var(--first-color);
+    text-align: center;
+}
+
+#Skills-Header {
+    max-width: fit-content;
+    margin: 3rem auto 1.5rem auto;
+    color: var(--first-color);
+    text-align: center;
+}
+
+#Projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#github-header {
+    /* border: 1px solid; */
+    text-align: center;
+    color: var(--first-color);
+    width: 110px;
+    margin: 25px auto;
+    margin-bottom: 20px;
+}
+
+.Project-box {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#Info {
+    margin-top: -0.8rem;
+    padding: 0px 10px;
+}
+
+#Info p {
+    margin-top: -1rem;
+    font-size: 14px;
+    color: var(--second-color);
+    text-align: justify;
+    height: 80px;
+}
+
+#Info h3,
+h4 {
+    color: var(--second-color);
+}
+
+.techStack {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 40px;
+    align-items: center;
+    width: 35%;
+    margin-top: -1rem;
+    color: var(--second-color);
+}
+
+.Project-box img {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 185px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#Project-button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-top: 1px solid rgb(231, 231, 231);
+}
+
+
+.button-pr {
+    background-color: var(--second-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.button-pr:hover {
+    cursor: pointer;
+    background-color: var(--first-color);
+}
+
+.calendar {
+    width: 90%;
+    padding: 10px 10px;
+}
+
+
+#Project {
+    border: 1px solid;
+}
+
+#About-section>h2+p {
+    width: 90%;
+    font-size: 18px;
+    margin: auto;
+    /* padding: 2rem; */
+    border-radius: 20px;
 }
 
 
 
 @media screen and (max-width:768px) {
+    body {
+        width: auto;
+    }
+
     #nav {
-        display: flex;
-        gap: 10rem;
+        min-width: auto;
+        gap: 13rem;
+        padding: 0px 20px;
+        width: 90%;
+        height: var(--header-height);
     }
 
     .navigation {
-        position: relative;
+        /* position: relative; */
         position: fixed;
-        top: var(--header-height);
+        top: 2.9rem;
         right: -100%;
         width: 74%;
         height: 100%;
@@ -187,7 +376,7 @@ body {
         left: 0;
         top: 2rem;
         background-color: #f6f6f6;
-        z-index: 1;
+        z-index: 2;
     }
 
     .show {
@@ -203,6 +392,7 @@ body {
     .home__title {
         font-size: 25px;
         margin-bottom: 0;
+        margin-top: 2.5rem;
     }
 
     #about {
@@ -216,20 +406,60 @@ body {
         margin-left: 2rem;
     }
 
-    #about>:last-child {
-        height: 160px;
-        margin-right: auto;
+    /* #about>:last-child {
+        /* margin-top: -4rem; */
+    /* height: 160px; */
+    /* margin-right: 100%;
+        margin-bottom: 2rem; */
+    /* }  */
+
+    #Photo {
+        padding-top: 2rem;
+        flex-direction: row;
+        margin-bottom: -1rem;
+        align-self: flex-end;
+        margin-top: 2.5rem;
+        margin-right: 4rem;
+        z-index: -1;
     }
 
-    #Profile-photo {
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        height: 250px;
+    .home__blob {
+        transform: scale(1.5);
+        /* bottom: 40%; */
     }
 
     #nav-toggle {
         display: block;
+    }
+
+    #About-Me {
+        margin-top: 4.5rem;
+    }
+
+    #About-section {
+        width: 90%;
+    }
+
+    #About-section {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #about-text h2 {
+        text-align: center;
+    }
+
+    #about-photo {
+        text-align: center;
+    }
+
+
+    #Projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 0px 10px;
+        margin: auto;
     }
 
 }

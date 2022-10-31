@@ -8,6 +8,7 @@
     <title>Suhaib Malik</title>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
 
 <body>
@@ -17,10 +18,10 @@
             <a href="#" class="name">Suhaib</a>
             <div class="navigation" id="nav-menu">
                 <ul id="nav-list">
-                    <li class="nav-item"><a href="" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Service</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Project</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#About-Me" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#Projects" class="nav-link">Project</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -34,22 +35,137 @@
     <div id="about">
         <div id="Introduction">
             <h1 class="home__title">Hi,<br> I'am <span class="Name-color">Suhaib</span><br>Java Backend Developer</h1>
-            <button id="Resume-button">Resume</button>
             <div id="Links">
-                <i class='bx bxl-linkedin-square box-icons'></i>
-                <i class='bx bxl-github box-icons'></i>
+                <button id="Resume-button">Resume</button>
+                <div>
+                    <a href="https://www.linkedin.com/in/suhaib-malik01/" target="_blank"><i
+                            class='bx bxl-linkedin box-icons'></i></a>
+                    <a href="https://github.com/Suhaib-Malik01" target="_blank"><i
+                            class='bx bxl-github box-icons'></i></a>
+                    <i class='bx bxl-gmail box-icons'></i>
+                </div>
             </div>
 
         </div>
         <div id="Photo">
-            <img id="Profile-photo"
-                src="https://lh3.googleusercontent.com/-vkxCEnzmz3BF3R5LlpcIEa3Nx-Fl3ADSgDGIWXajqBcqv07UJJ4yduqAnLWWwedpkGk_pPrGxok0R9Cl4CWmYxHhfOZWVp8mg4nL2k7agoiS1QrJoaBy3sLfkIuv21innCUfCqQP7L8z2f31wWd2oOvdUJJmAG3tXxAWrW3o5do68ujo6I2NRSwo7-yn_XhrKJLNax9j3jnSxw5rCkWofhPch7Wrlg6_F74XK-QMi9S5u62F-PQxpr3W-um0w9LLzSrEn_l1hgY_jbQ3ZNzRezhMJG49lSp1qZdAUo3uDj1WPXetGtpfdR-sO8x_Wo7OcOm5srApBBcm7WbyiLAtW6VJlYc2VNXdwn7feKn2eV-Hp1O_G6BG-HIalxghZzZuHtAxBJ_Pnl4kth2nZDaK7fVgHqryTlnQN0mqRw169tZmz5xuvLMPt1nC7PEOUKp05rS-HNsGGnE9OS-dfsJCIz0-I5MzXj_g1Z8jFCb78h_Wg3d7uXIJkSTxY4TYjPknXqtltr9a_XEJSzkf9fZ0gJpskZiWknuG5MxjVdTzr8R9n7HTbB7HVz1lX3p5HqUnns2krds6F48Euf752-adz-i0HRHvGkNZDhAjNotJN2exqPVFGneBW_dd1_WPUGDLwZ_r5hjqdS0D3OS80eg4_IwjEMPYTutPHy8-XPYYucYPL4IHSwX-pf_VVsbmcw3I54-PKwPvFIWn8IW-ts5ZcBeqUzn1dn5qZt40lzhRXJ_yU8Y1pqhhasC1cS8TC7vVSZNIJhTXYax7zfehEPiXCsnJTuVhOXDDUCOuMFuK-H4I73hJ-R7ShSj3ELtLcgYB34YRpgFSBIpd161WY-NofRKKGBXl062H4V_FkgvgnwpQeKoYpgiR52vCiC8iX3bqZwSMbINLUcMTOKnxpGnepWcrd8fxQxwb83dOa_M-rhMODmQqdlgCDhTUWTV6Nij-IlvVJLdX8o=s612-no?authuser=0"
-                alt="">
+            <svg class="home__blob" fill="#4070f4" width="480" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path
+                        d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <path
+                        d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    <image class="home__blob-img" x="25" y="60" width="450"
+                        href="https://lh3.googleusercontent.com/g-6t8yvQXrpYuNNtyGcVHrwwJaJeEOBECeNZyaE_79Wp3QPQBpvW2Dpr930cp9Z4o8wJgB8vO_2ksaF4g0xtcifBVp1iPqXjmaw_Dc6B7YRw2ObjCo8P3OAAMOWnXKmY4_AJNSJ_y0fP9hJWcQnD4dyw4zSckgkSF71efQvOX-jiE4aAAoNkU9aJGtaBfhKIv7Q7Gqh7xRcj66k7k-GWaLIP_2Kx8Xcxm4DVcWZCv7Z9mF7kxACgjzYqXY7H7KNuXjgPgzIDeU8E_iRqvrxBwYMsTdCRTmffbG7ICCX_ORy0lccVsg85zhjRsknTPqhSMmWyEb_IxiCJR5NHLri-6PoSgrz7GnhbHQAGXT2GTcdcuH4UUh8gU0QUdtOEO86t6yjXLvD29G_PpAxAN0NDiuxyEiGGz1463ba3kU36Itf0kq7Dbelx8PwNru6rDF1KQ4yZFb1OcYaAMac3UjVdwGpvU92TB-Kns-cw40_Py4xWoyydSplrtpHb9HKyPnqcZafZ11QZXKCyMCUEvfgRKQa5ZQwwBP7L-oK5Jjv0RXSkmnFu2f3npti66JCnPUGl1vKNFgDfTwJ9t2TViSfdFsfz0FTlWGjvCt2MqshNWRjiNvVgBTr1NihIRYCFx0eJf3FA6gIuI617v7T8YLYzH972KZrC0FtbdK_zjoM4jzW_Yi0KIXpw6NonU2gU444v8VnMTNmdQW6Gvvxo_VA9wSccmjMVA2h_0m_Bl_VFsLlpqC0YcRd1rnRFCKkWX0XJievUwNfas-WRCkYTRIla8xkrpQK-CMDLpQ0sZOwSQvXCLnqwXv6l9b0rEXDxrfo0LWly-N7t4i3SvaqXqXGSRJrK8DtKv1vkEB3ZTiCp3qWh8pEuRxBb7jjvgSgBNtAQqlDH_ccw-YgPSwaFxaTX73S-lG1kAEh0irgAVTv1KI4IBj-zsmuLChz82iR7tWMpyvCRzXlGwBumgaUNOQ=s500-no?authuser=0" />
+                </g>
+            </svg>
         </div>
     </div>
+
+    <!-- About Me -->
+    <h1 id="About-Me" class="heading">About</h1>
+    <div id="About-section">
+        <h2>Hi, I am <span class="Name-color">Suhaib</span></h2>
+        <p>I am a Java Backend-developer and graduate
+            from Masai School who loves to learn and try
+            new technologies consectetur adipisicing elit. Provident hic excepturi, reiciendis
+            similique aliquid, recusandae dignissimos doloribus, commodi iure suscipit ad minima voluptatibus a
+            quibusdam esse voluptatem mollitia fuga quos.</p>
+    </div>
+    </div>
+    <h1 id="Skills-Header" class="heading">Skills</h1>
+
+    <div>
+
+    </div>
+
+    <h1 id="Project-Header" class="heading">Projects</h1>
+
+    <div id="Projects">
+        <div class="Project-box">
+            <img src="https://lh3.googleusercontent.com/vK3UzhObhYlSM5DJAyKvAc46Rfv3F1ePo4lZWBJWS1c3RuYjJDKsnJDx39aDadiV9qYiOC74Vp-FnNyb6eJXp01OpTSCNnOfhf2YFphJA6HruDhVYa2vUZMT0WAKXbm0JllWCGWiFPdhBzLHW4HdkYqk6aQ-WdQMAEfkXmuBwM17cGd0z6NRKWCl3DmU4YqyH12GAbli_8QjgbJwARdirpvhH8PVwpcag78JIDO5OWtNnUmmbpISSGpKufa9mxmxeIXfO_fmqhVNYQpBRv5P4fGTAt31bABq_F1GqnCe9tEJpbaK9m8RSNpegFlZIZpwOzioch-SqP0O5F0A3SrDZg49KNlv-DGBM9zt6pptSlmx9wIokZ0ZyZ3ZTCvkcfDw-K4SKmnz7rTTo51VFz1cYDtlj-xUUsOTat_eJ90nrPmqeMEQKCOI9pRfK5AUHzWVAi7JWjO98Tzm7WO2RkoeBVU04nYSp4ZJkzDCB6Jfjg6IJ1AxnfzNRd6CTho4BNq6RQJpeoLekWr4IhkD062OSX6BmklkzlHEedoKEN7xmFon2WAsKvCOPaZQ4sU9DYvtlKpvQ9nK6VhYbaqPDP326BHfBU-uFY3HfecBCUXSgc9zWy_Z-mVZm1vCTnmWIFt6Swc55CmnAF3pmv0QSyO3D1ta-IaiqyeFd2zj7xhxDCjVFqczRfK3BLcFuhbCtOh8tBSZ9PPDps1321E3_AE4RL1YJ7JCzRrHgbBNLSZm9WNLgupEB0m9WJ9CpKaGtnxdoL4NWDFLRuXtct1cviwhKuuSedaldz_mIF0fRU2Lue3JKIs2VX_jyqBhruDcLt5P_nL9J6HslYbbVC4nr9fs_wuXxzTVmn5a3APE3Z066awscWJOMm_ggK4Jg5TOECvaOHcsD4Rj3-vIUNrZvcLc3YtfB6I-jIUVBvVYBK1_-dshEVe6bHI4vdKCrH3qNPnPQIuVqJJL5JBjq5Ssmw=w1701-h781-no?authuser=1"
+                alt="">
+
+            <div id="Info">
+                <h3>Fiver Clone</h3>
+                <p>Fiverr is an online freelance marketplace where you can sell gigs. It is a popular freelance website
+                    as well. On Fiverr, you can hire a freelancer as well as work as a freelancer</p>
+                <h4>Tech Stack</h4>
+                <div class="techStack">
+                    <i class='bx bxl-html5 box-icons'></i>
+                    <i class='bx bxl-css3 box-icons'></i>
+                    <i class='bx bxl-javascript box-icons'></i>
+                    <i class='bx bxl-bootstrap box-icons'></i>
+                </div>
+            </div>
+            <div id="Project-button">
+                <button class="button-pr">Live</button>
+                <button class="button-pr">GitHub</button>
+            </div>
+
+
+        </div>
+        <div class="Project-box">
+            <img src="https://lh3.googleusercontent.com/ySMNlEp5ImD7Q5OQ-rgzcM527eXR0dPZa0-9AamdUwgCZOnG4KEtIh1uU0qcKL3VLT3QrllAoUKO7H31crwDdZlbAxKvhjbZs2U8s1ztd2ZBdT1Cn4y3hHJ0K4EM9mfcSU63aRB96IqMkB5TdpFi2XMxkvXfdBq0EF8MaWbK6lEkc6e93n0RnH3IURRsQ__EC-DvNEsddrqDPi8RnMY3DJQvbvTkbRDrpAzTJiTwJ6I51URGdXb3MZa7v-gQxgzZ5tjNIzULqfNkt6Cu7wfGryZBylRIE5lvOfDpzp6HTourv1Uq1OJ8IhCqt0tgTbNA0RYATFHCijFrpagXkDvhhMBzz-rIE_gvk1MtoUuZ9-bd0CtsBvOPh-cPcF_r0JfQhAfOezU0IwQssfPVknrbXgztmCBr3upote77z4wz_JWsSis9-Dvc1_1bzR3aW-LZ4-Ywd-jABjy9MoqbmTI7gCwZB2Fish2lQ_85BekiHPjBuCHgF3vY0IEW7DZRMxWWQ2-7TeVOnKPJ8FP--lQ5ztLGg_MCxVRBVlMp2B9qc5O9G3r4NKTcVNtBU7Ko3lN4m-8l2zw2ln51P-xzZQhMyRvtfNeHOOB-dgcA3Y8YBtMJyxneGwzu9bOiCO67yC3TyIKuB1uCGo1nHCLYP0bFKt-w5uGb4TNHngNtASW29exuUWuQgw-Fap7npF-N9fk3VxJsg1KkfFjnn8hCJ_U9ISuLwF1dN3tBnqI8zPVH237IbV-OWDzha-pjB0huK7QYdPqyx1fZjme7N_2FaEqBceAaDD86VNorMymY3SpUi7FZJViCO_cpJr9yvZ041RkkOEKyvrsIQ04vyXK97baAf38p5ChS1qkHzQGOYWvYcTqpx5NYr_5hukrosfXRtlQb9z-NXn0sTZMRL-LPL-hGB8G8VOvawoHaCA4TXrAlraivnJvSVEX2Md9rCJjhygxHLpzubcg0FRumXzA7mg=w1899-h902-no?authuser=1"
+                alt="">
+
+            <div id="Info">
+                <h3>Animoto Clone</h3>
+                <p>Animoto is a cloud-based video creation service that produces video from photos, video clips, and
+                    music into video slideshows, and customized web-based presentations.</p>
+                <h4>Tech Stack</h4>
+                <div class="techStack">
+                    <i class='bx bxl-html5 box-icons'></i>
+                    <i class='bx bxl-css3 box-icons'></i>
+                    <i class='bx bxl-javascript box-icons'></i>
+                </div>
+            </div>
+            <div id="Project-button">
+                <a href="https://animoto-website-clone.netlify.app/"><button class="button-pr">Live</button></a>
+                <button class="button-pr">GitHub</button>
+            </div>
+
+        </div>
+        <div class="Project-box">
+            <img src="https://lh3.googleusercontent.com/dDb26UWsnSV9PWOzO9Nj27tiXJWB16klUroESDXKiEBFNg_6UwR9cR-VSlD-t5C3U11qtDjVG5SDnOVfkT_3kuD27xTlFSKx-iVmmNu9e-jozGdpS6QVYd7Nv3C5Ts4LSARPaVXjoUPaUNxy3osYrw5J7d_ErIk4r9sM4OpeK7RD6oQYYuHO0j9-S-p5IjitSDNKSduiRmHImAnPB2uNsxe5hBqMqVrQrdqyrebtH-aRMNgJFbhiqFM-o53QDa6Cg0-mk5bF-ixsNFy5ayX4tgK_x0ucdZkMnmSvwomcXyyhQpPowNMYXx4yeQjWVDE0WQo04aGr7mZA-YYaIDR81cD7SdZ9JnkwaB96ZSfm-DSjzqQSoumvR99JaFmabTwOf6kl7jZXM6xbv_cqILWy1t4b897j87qWXlJ_GzqZOAKlPnSz728GVQXE4RJGOonrnbAZEJfQ_hlVLeJxvzds3YGCO2YiDLBAwDDyRWKnvdj8wqK1HDZJaFAGopcf5h5BHBzndgW6ReI40eYPMeg4keKKZzaG_QzF_osmkzV6_cdmgrjndGJUhwSpw7cx4YoLs5yRvQXo-iX5yCDNv1ZNm1AfkQCfI9qgjbJuQ1E-tpNsxoIgjqdnotlxb88iWbqdz0_5Z7205PYm-oCKxi49CUKhAdIBROgAUmmIShvO9CUWXRdfyCo62LH3eWHBOFxkz8S0-P0YN2bsYiROSd4ZCGH6F0qH0YkaP22vPl8jUDiajTWYOwYUALQNxkRPGhpfGfOGC8BwYoCgEc-S_Z_8VX3hsXUrUhwG116rSiDP-9-HxqQEs-4_TMGjqfM0My8oBTK_88mIXmr44gCiJSoM0Ws8lHLgyrDue5mhmPqrIhzBl9Tnz43S_InfsT5ofrJIVuG2UMH1pYLeWpTaWE_REF4gETacpsVr40v48NN3k9T-mxXH_ceIUmj5HMfh2GH9nQQbjRJcxDy9bkSKRg=w1315-h708-no?authuser=1"
+                alt="">
+
+            <div id="Info">
+                <h3>Weather App</h3>
+                <p>Weather App is an OpenWeatherMap-based web App. Created using OpenWeatherMap API, Geolocation API for
+                    Location and Google map API for Live Location Map</p>
+                <h4>Tech Stack</h4>
+                <div class="techStack">
+                    <i class='bx bxl-html5 box-icons'></i>
+                    <i class='bx bxl-css3 box-icons'></i>
+                    <i class='bx bxl-javascript box-icons'></i>
+                </div>
+            </div>
+            <div id="Project-button">
+                <a href="https://openweather-info-app.netlify.app/" target="_blank"><button
+                        class="button-pr">Live</button></a>
+                <a href="https://github.com/Suhaib-Malik01/Weather-App" target="_blank"><button
+                        class="button-pr">GitHub</button></a>
+            </div>
+
+        </div>
+    </div>
+    <h1 id="github-header" class="heading">GitHub</h1>
+
+    <div class="calendar">
+        Loading the data just for you.
+    </div>
+
+
+
+
 
 </body>
 
 </html>
 
 <script src="Protfolio.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
