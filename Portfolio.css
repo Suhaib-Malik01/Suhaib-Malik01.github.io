@@ -39,12 +39,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 1200px;
     top: 0rem;
     align-items: center;
     background-color: white;
-    height: 80px;
+    height: 70px;
+    box-shadow: 0 1px 0px rgba(146, 161, 176, 0.15);
 
 }
 
@@ -60,7 +60,7 @@ body {
 .name {
     text-decoration: none;
     color: var(--second-color);
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 510;
     transition: 0.2s;
 }
@@ -73,15 +73,15 @@ body {
 /* Home */
 .name {
     color: var(--first-color);
-    font-size: 22px;
+   
     font-weight: bolder;
 }
 
 #about {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
-    padding: 4rem 0rem;
+    margin-top: 3rem;
+    padding: 8rem 0rem 4rem 0rem;
 }
 
 
@@ -93,11 +93,17 @@ body {
 
 }
 
+
 #about>:last-child {
     display: flex;
     justify-content: right;
     width: 47%;
     align-items: center;
+}
+
+#About-section h2 {
+    color: var(--second-color);
+
 }
 
 .Name-color {
@@ -147,11 +153,15 @@ body {
     row-gap: 16px;
     margin-top: 1rem;
 }
+#Links div{
+    margin-top: 6px;
+}
 
 .box-icons {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--second-color);
     transition: 0.2s;
+    margin-right: 5.5px;
 }
 
 .box-icons:hover {
@@ -181,18 +191,32 @@ body {
     border-radius: 10px;
 }
 
-#about-text {
-    text-align: justify;
-    color: var(--second-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 #About-section {
     margin-top: 20;
-    text-align: center;
-    gap: 25px;
+    text-align: justify;
+    display: flex;
+    gap: 3.5rem;
+}
+
+#About-section>:first-child {
+    width: 50%;
+}
+
+#About-section>:last-child {
+    justify-content: center;
+    display: flex;
+
+    flex-direction: column;
+}
+
+#About-section>:last-child h2 {
+    margin-bottom: -0.5rem;
+}
+
+#About-section img {
+    width: 100%;
+    border-radius: 10%;
 }
 
 #Project-Header {
@@ -216,12 +240,12 @@ body {
 }
 
 #github-header {
-    /* border: 1px solid; */
     text-align: center;
     color: var(--first-color);
     width: 110px;
     margin: 25px auto;
     margin-bottom: 20px;
+    margin-top: 6rem;
 }
 
 .Project-box {
@@ -298,11 +322,7 @@ h4 {
 }
 
 #About-section>h2+p {
-    width: 90%;
-    font-size: 18px;
-    margin: auto;
-    /* padding: 2rem; */
-    border-radius: 20px;
+    font-size: 17px;
 }
 
 
@@ -399,19 +419,13 @@ h4 {
         height: calc(100vh- 3rem);
         width: 100%;
         flex-direction: column-reverse;
+        padding: 3rem 0rem;
     }
 
     #about>:first-child,
     #about>:last-child {
         margin-left: 2rem;
     }
-
-    /* #about>:last-child {
-        /* margin-top: -4rem; */
-    /* height: 160px; */
-    /* margin-right: 100%;
-        margin-bottom: 2rem; */
-    /* }  */
 
     #Photo {
         padding-top: 2rem;
@@ -438,6 +452,12 @@ h4 {
 
     #About-section {
         width: 90%;
+        text-align: center;
+        gap: 1rem;
+    }
+    #About-section>:first-child{
+        margin: auto;
+        width: 70%;
     }
 
     #About-section {
