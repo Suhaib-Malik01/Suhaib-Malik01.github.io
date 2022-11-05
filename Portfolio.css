@@ -19,12 +19,17 @@
 
 }
 
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    width: 1200px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
 
@@ -73,7 +78,7 @@ body {
 /* Home */
 .name {
     color: var(--first-color);
-   
+
     font-weight: bolder;
 }
 
@@ -153,7 +158,8 @@ body {
     row-gap: 16px;
     margin-top: 1rem;
 }
-#Links div{
+
+#Links div {
     margin-top: 6px;
 }
 
@@ -325,10 +331,115 @@ h4 {
     font-size: 17px;
 }
 
+#Contact-header {
+    text-align: center;
+    color: var(--first-color);
+    width: 135px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    margin-top: 8rem;
+}
 
+#Contact-input-box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    row-gap: 20px;
+
+}
+
+#Contact-input-box input,
+textarea {
+    border-radius: 10px;
+    height: 40px;
+    font-size: 13px;
+    padding: 2px 10px;
+    border: 1px solid black;
+}
+
+#Contact-input-box textarea {
+    padding: 8px 10px;
+    height: 200px;
+}
+
+#Contact-input-box>:last-child {
+    padding: 10px 15px;
+    width: 5rem;
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--first-color);
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+#Contact-input-box>:last-child:hover {
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#footer {
+    background-color: var(--second-color);
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    width: auto;
+    padding: 1rem 0rem;
+}
+
+#footer>:first-child {
+    /* border: 1px solid white; */
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box-icons-footer {
+    font-size: 3rem;
+    color: white;
+    margin-top: 20px;
+    transition: 0.2s;
+    margin-right: 15px;
+}
+
+.box-icons-footer:hover {
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+#Contact {
+    height: 100%;
+    margin-top: -8.6rem;
+    color: rgb(223, 223, 223);
+    width: 20%;
+    margin-left: auto;
+}
+
+#Contact p {
+    padding: 0px;
+    margin-top: -0.3rem;
+}
+
+#Github-section>:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+#Github-section>:last-child img {
+    width: 500px;
+}
 
 @media screen and (max-width:768px) {
     body {
+        width: auto;
+    }
+
+    main {
         width: auto;
     }
 
@@ -395,7 +506,7 @@ h4 {
         height: 0.18rem;
         left: 0;
         top: 2rem;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         z-index: 2;
     }
 
@@ -455,7 +566,8 @@ h4 {
         text-align: center;
         gap: 1rem;
     }
-    #About-section>:first-child{
+
+    #About-section>:first-child {
         margin: auto;
         width: 70%;
     }
@@ -481,5 +593,48 @@ h4 {
         padding: 0px 10px;
         margin: auto;
     }
+
+    #Contact-input-box {
+        width: 90%;
+
+    }
+
+    #Github-section {
+        margin: auto;
+    }
+
+    #footer {
+        background-color: var(--second-color);
+        margin-top: 2rem;
+        font-family: 'Poppins', sans-serif;
+        /* padding: 0rem 0rem; */
+    }
+
+    #Github-section>:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Contact {
+        height: 100%;
+        margin-top: -2.6rem;
+        color: rgb(223, 223, 223);
+        width: 20%;
+        margin-left: auto;
+    }
+
+    #Github-section>:last-child img {
+        width: 350px;
+        align-items: center;
+        margin-top: -0.5rem;
+    }
+
+    #Github-section>:last-child>:last-child {
+        margin-top: -1.8rem;
+        margin-bottom: -2rem;
+    }
+
+
 
 }

@@ -15,7 +15,5 @@ window.onload = function () {
     GitHubCalendar(".calendar", "Suhaib-Malik01");
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "Suhaib-Malik01", { responsive: true });
-    
+
 }
-
-
