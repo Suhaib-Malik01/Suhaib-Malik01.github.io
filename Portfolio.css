@@ -247,6 +247,7 @@ body {
     justify-content: space-around;
     gap: 10px;
     row-gap: 15px;
+    
 
 }
 
@@ -260,11 +261,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7px 7px 5px 7px;
+    padding: 9px 8px 5px 8px;
     border-radius: 50%;
 }
 #Skills div h5{
     margin-top: -0.01rem;
+    color: var(--second-color);
+    font-size: 12px;
 }
 
 #Projects {
