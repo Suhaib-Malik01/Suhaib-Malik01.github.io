@@ -40,17 +40,16 @@ body {
 #nav {
     height: var(--header-height);
     position: fixed;
-    min-width: 1200px;
+    min-width: 1205px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 1200px;
     top: 0rem;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 70px;
-    box-shadow: 0 1px 0px rgba(146, 161, 176, 0.15);
-
+    box-shadow: 0 1px rgba(146, 161, 176, 0.15);
 }
 
 #nav-list {
@@ -239,20 +238,20 @@ body {
     text-align: center;
 }
 
-#Skills{
+#Skills {
     display: grid;
     width: 90%;
     margin: auto;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: space-around;
     gap: 10px;
     row-gap: 15px;
-    
+
 
 }
 
 
-#Skills div{
+#Skills div {
     text-align: center;
     background-color: rgb(243, 243, 243);
     height: 5rem;
@@ -264,7 +263,8 @@ body {
     padding: 9px 8px 5px 8px;
     border-radius: 50%;
 }
-#Skills div h5{
+
+#Skills div h5 {
     margin-top: -0.01rem;
     color: var(--second-color);
     font-size: 12px;
@@ -481,19 +481,21 @@ textarea {
         padding: 0px 20px;
         width: 90%;
         height: var(--header-height);
+        background-color: rgba(255, 255, 255);
+
     }
 
     .navigation {
-        /* position: relative; */
         position: fixed;
         top: 2.9rem;
         right: -100%;
         width: 74%;
         height: 100%;
         padding: 1rem 0rem;
-        background-color: #4070f4;
+        background-color: var(--first-color);
         transition: .5s;
         z-index: 1;
+
     }
 
     #nav-list {
@@ -501,6 +503,7 @@ textarea {
         flex-direction: column;
         margin-bottom: var(--mb-4);
         z-index: 1;
+
     }
 
     .nav-link {
@@ -510,6 +513,7 @@ textarea {
 
     .nav-link:hover {
         position: relative;
+        color: white;
     }
 
     .nav-link:hover::after {
@@ -521,6 +525,7 @@ textarea {
         top: 2rem;
         background-color: #f6f6f6;
         z-index: 1;
+
     }
 
     #nav-toggle {
@@ -528,7 +533,6 @@ textarea {
         font-size: 2rem;
         right: 0;
         cursor: pointer;
-
     }
 
     .active::after {
@@ -538,7 +542,6 @@ textarea {
         height: 0.18rem;
         left: 0;
         top: 2rem;
-        background-color: #ffffff;
         z-index: 2;
     }
 
@@ -616,13 +619,14 @@ textarea {
     #about-photo {
         text-align: center;
     }
-    #Skills{
-        
-        grid-template-columns: repeat(3,1fr);
+
+    #Skills {
+
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
         row-gap: 15px;
-    
+
     }
 
     #Projects {
