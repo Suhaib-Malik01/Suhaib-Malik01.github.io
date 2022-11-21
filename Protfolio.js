@@ -7,8 +7,11 @@ let showMenu = (toggleId, navId) => {
             nav.classList.toggle('show')
         })
     }
+    
 }
 showMenu('nav-toggle', 'nav-menu')
+
+
 
 
 window.onload = function () {
@@ -47,7 +50,12 @@ let arr = [
     {
         "name": "GitHub",
         "icon": "https://img.icons8.com/glyph-neue/48/github.png"
+    },
+    {
+        "name":"Hibernate",
+        "icon": "https://toppng.com/uploads/preview/hibernate-logo-11609364227r2rk6gphuk.png"
     }
+    
 ]
 
 
