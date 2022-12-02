@@ -476,7 +476,10 @@ textarea {
 #Github-section>:last-child img {
     width: 500px;
 }
-
+#Yoga-Illustration{
+    width: 550px;
+    height: 480px;
+}
 
 @media screen and (max-width:768px) {
     body {
@@ -583,26 +586,21 @@ textarea {
     #about>:first-child,
     #about>:last-child {
         margin-left: 2rem;
-    }
-
-    #about>:last-child {
-        transform: scale(1.5);
+        /* border: 1px solid; */
     }
 
     #Photo {
-        padding-top: 2rem;
-        flex-direction: row;
-        margin-bottom: -1rem;
+        flex-direction: column;
         align-self: flex-end;
-        margin-top: 2.5rem;
         margin-right: 4rem;
+        margin-bottom: -2rem;
         z-index: -1;
     }
-
-    .home__blob {
-        transform: scale(1.5);
-        /* bottom: 40%; */
+    #Yoga-Illustration{
+        width: 300px;
+        height: auto;
     }
+
 
     #nav-toggle {
         display: block;
