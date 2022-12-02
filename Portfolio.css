@@ -150,7 +150,7 @@ body {
 
 #Resume-button:hover {
     cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #2354dc;
 }
 
 #nav-toggle {
@@ -165,24 +165,40 @@ body {
     margin-left: 2px;
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 20px;
     margin-top: 0rem;
 }
 
 #Links div {
     margin-top: 6px;
+    display: flex;
+    gap: 2px;
 }
 
+.bxl-linkedin{
+    background-color: #4070f4;
+    color: white;
+}
 .box-icons {
     font-size: 2rem;
-    color: var(--second-color);
     transition: 0.2s;
     margin-right: 5.5px;
+    border-radius: 50%;
+    padding: 5px 5px;
+    transition: 0.4s;
 }
-
+.bxl-github{
+    background-color: rgb(13, 13, 13);
+    color: white;
+}
+.bx-envelope{
+    background-color: rgb(212, 2, 2);
+    color: white;
+}
 .box-icons:hover {
     cursor: pointer;
-    color: var(--first-color);
+    background-color: white;
+    color: black;
 }
 
 #About-Me {
@@ -445,11 +461,13 @@ textarea {
     margin-top: 20px;
     transition: 0.2s;
     margin-right: 15px;
+
+    border-radius: 50%;
+    padding: 5px 5px;
 }
 
 .box-icons-footer:hover {
     cursor: pointer;
-    color: var(--first-color);
 }
 
 #Contact {
@@ -567,7 +585,7 @@ textarea {
     #Introduction {
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 20px;
     }
 
     .home__title {
