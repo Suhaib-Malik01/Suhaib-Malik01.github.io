@@ -6,6 +6,9 @@ let showMenu = (toggleId, navId) => {
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show')
         })
+        toggle.addEventListener('click',()=>{
+            nav.classList.toggle('hide')
+        })
     }
     
 }
@@ -21,7 +24,7 @@ window.onload = function () {
 
 }
 
-let arr = [
+let data = [
     {
         "name": "Java",
         "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
@@ -53,8 +56,14 @@ let arr = [
     },
     {
         "name":"Hibernate",
-        "icon": "https://toppng.com/uploads/preview/hibernate-logo-11609364227r2rk6gphuk.png"
+        "icon": "https://seeklogo.com/images/H/hibernate-logo-8C95C75A24-seeklogo.com.png"
     }
+    ,
+    {
+        "name": "Maven",
+        "icon": "https://editorconfig.org/logos/maven.png"
+    }
+
     
 ]
 
@@ -62,16 +71,74 @@ let arr = [
 let container = document.getElementById("Skills");
 
 
-display(arr);
+display(data);
+let count = 0;
 function display(arr){
     container.innerHTML = "";
-    arr.forEach(ele => {
+    for(let i=0;i<=6;i++){
         let div = document.createElement("div");
         let img = document.createElement("img");
-        img.src = ele.icon;
+        div.setAttribute("Class",'Skill-div')
+        img.src = arr[i].icon;
         let name = document.createElement("h5");
-        name.innerText = ele.name;
+        name.innerText = arr[i].name;
         div.append(img,name);
         container.append(div);
-    });
+    };
+    for(let i=7;i<arr.length;i++){
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        div.setAttribute("Class",'Skill-div-2')
+        img.src = arr[i].icon;
+        let name = document.createElement("h5");
+        name.innerText = arr[i].name;
+        div.append(img,name);
+        container.append(div);
+    }
 }
+
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+//--Home Animation
+sr.reveal('.home__title',{})
+sr.reveal('#Links',{delay:200})
+sr.reveal('#Photo',{delay:300})
+
+
+// -- About Animation
+sr.reveal('.About__Photo',{})
+sr.reveal('.About__Name',{delay:200})
+sr.reveal('.About__Name+p',{delay:400})
+
+// ---Skills Animation
+
+sr.reveal('.Skill-div',{})
+sr.reveal('.Skill-div-2',{delay:200});
+
+// --Project Animation
+
+sr.reveal('.fiverr',{})
+sr.reveal('.Animoto',{delay:200})
+sr.reveal('.Weather',{delay:400})
+
+
+// --Github Animation
+
+sr.reveal('.calendar',{})
+sr.reveal('.stats-1',{delay:200})
+sr.reveal('.stats-2',{delay:400})
+
+
+
+// --Contact Animation
+
+
+sr.reveal('.in-name',{})
+sr.reveal('.in-email',{delay:200})
+sr.reveal('.contact__input',{delay:400})
+sr.reveal('.Contact-button',{delay:500})
