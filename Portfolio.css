@@ -67,6 +67,21 @@ body {
     z-index: 1;
 }
 
+#nav-resume{
+    padding: 5px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--first-color);
+    background-color: white;
+    transition: all 0.5s;
+    font-size: 14px;
+}
+
+#nav-resume:hover{
+    cursor: pointer;
+    background-color: var(--first-color);
+    color: white;
+}
+
 #nav-list {
     display: flex;
     list-style: none;
@@ -566,6 +581,10 @@ textarea {
         top: 2rem;
         background-color: #f6f6f6;
         z-index: 1;
+
+    }
+    #nav-resume{
+        border-radius: 5px;
 
     }
 
