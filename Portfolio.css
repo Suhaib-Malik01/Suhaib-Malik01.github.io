@@ -67,7 +67,7 @@ body {
     z-index: 1;
 }
 
-#nav-resume{
+#nav-resume {
     padding: 5px 12px;
     border-radius: 10px;
     border: 1px solid var(--first-color);
@@ -76,7 +76,7 @@ body {
     font-size: 14px;
 }
 
-#nav-resume:hover{
+#nav-resume:hover {
     cursor: pointer;
     background-color: var(--first-color);
     color: white;
@@ -496,7 +496,7 @@ textarea {
     color: rgb(223, 223, 223);
     display: flex;
     flex-direction: column;
-    align-items: left;    
+    align-items: left;
 }
 
 #Contact>:last-child {
@@ -504,11 +504,12 @@ textarea {
     margin-top: -1rem;
 }
 
-#Contact>p>a{
+#Contact>p>a {
     color: rgb(223, 223, 223);
     text-decoration: none;
 }
-#Contact>h4{
+
+#Contact>h4 {
     color: rgb(223, 223, 223);
     margin-bottom: -0.8rem;
 }
@@ -591,7 +592,8 @@ textarea {
         z-index: 1;
 
     }
-    #nav-resume{
+
+    #nav-resume {
         border-radius: 5px;
 
     }
@@ -683,7 +685,7 @@ textarea {
     #about-text h2 {
         text-align: center;
     }
-    
+
 
     #Skills {
         grid-template-columns: repeat(3, 1fr);
@@ -709,9 +711,11 @@ textarea {
     #Github-section {
         margin: auto;
     }
-    #footer>:first-child{
+
+    #footer>:first-child {
         margin: auto;
     }
+
     #footer {
         background-color: var(--second-color);
         margin-top: 2rem;
@@ -809,7 +813,8 @@ textarea {
         z-index: 1;
 
     }
-    #nav-resume{
+
+    #nav-resume {
         border-radius: 5px;
 
     }
@@ -928,11 +933,12 @@ textarea {
     #Github-section {
         margin: auto;
     }
-    #footer>:first-child{
+
+    #footer>:first-child {
         margin: auto;
     }
+
     #footer {
-        border: 2px solid red;
         background-color: var(--second-color);
         font-family: 'Poppins', sans-serif;
         display: flex;
@@ -966,7 +972,7 @@ textarea {
 
 }
 
-@media screen and (min-width:992px) and (max-width:1240px){
+@media screen and (min-width:992px) and (max-width:1240px) {
     body {
         width: 1100px;
     }
@@ -1027,7 +1033,8 @@ textarea {
         z-index: 1;
 
     }
-    #nav-resume{
+
+    #nav-resume {
         border-radius: 5px;
 
     }
@@ -1118,7 +1125,7 @@ textarea {
     }
 
     #about-photo {
-       
+
         text-align: center;
     }
 
@@ -1145,11 +1152,13 @@ textarea {
     #Github-section {
         margin: auto;
     }
-    #footer>:first-child{
+
+    #footer>:first-child {
         margin: auto;
     }
+
     #footer {
-        
+
         background-color: var(--second-color);
         margin-top: 2rem;
         width: 100%;
@@ -1181,6 +1190,6 @@ textarea {
         margin-bottom: -2rem;
     }
 
-    
+
 
 }
