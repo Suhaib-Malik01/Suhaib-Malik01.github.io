@@ -30,7 +30,6 @@ navlink.forEach(n => n.addEventListener('click',linkAction))
 
 window.onload = function () {
     GitHubCalendar(".calendar", "Suhaib-Malik01");
-    // or enable responsive functionality:
     GitHubCalendar(".calendar", "Suhaib-Malik01", { responsive: true });
 }
 
@@ -114,6 +113,7 @@ const sr = ScrollReveal({
     duration: 2000,
     reset: true
 })
+
 //--Home Animation
 sr.reveal('.home__title',{})
 sr.reveal('#Links',{delay:200})
@@ -126,7 +126,6 @@ sr.reveal('.About__Name',{delay:200})
 sr.reveal('.About__Name+p',{delay:400})
 
 // ---Skills Animation
-
 sr.reveal('.Skill-div',{})
 sr.reveal('.Skill-div-2',{delay:200});
 
@@ -138,7 +137,6 @@ sr.reveal('.Weather',{delay:400})
 
 
 // --Github Animation
-
 sr.reveal('.calendar',{})
 sr.reveal('.stats-1',{delay:200})
 sr.reveal('.stats-2',{delay:400})
@@ -146,8 +144,6 @@ sr.reveal('.stats-2',{delay:400})
 
 
 // --Contact Animation
-
-
 sr.reveal('.in-name',{})
 sr.reveal('.in-email',{delay:200})
 sr.reveal('.contact__input',{delay:400})
