@@ -33,78 +33,7 @@ window.onload = function () {
     GitHubCalendar(".calendar", "Suhaib-Malik01", { responsive: true });
 }
 
-let data = [
-    {
-        "name": "Java",
-        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
-    },
-    {
-        "name": "MySQL",
-        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
-    },
-    {
-        "name": "Spring",
-        "icon": "https://img.icons8.com/color/48/000000/spring-logo.png"
-    },
-    {
-        "name": "HTML",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-    },
-    {
-        "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
-    },
-    {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
 
-    {
-        "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/github.png"
-    },
-    {
-        "name":"Hibernate",
-        "icon": "https://seeklogo.com/images/H/hibernate-logo-8C95C75A24-seeklogo.com.png"
-    }
-    ,
-    {
-        "name": "Maven",
-        "icon": "https://editorconfig.org/logos/maven.png"
-    }
-
-    
-]
-
-
-let container = document.getElementById("Skills");
-
-
-display(data);
-let count = 0;
-function display(arr){
-    container.innerHTML = "";
-    for(let i=0;i<=6;i++){
-        let div = document.createElement("div");
-        let img = document.createElement("img");
-        div.setAttribute("Class",'Skill-div')
-        img.src = arr[i].icon;
-        let name = document.createElement("h5");
-        name.innerText = arr[i].name;
-        div.append(img,name);
-        container.append(div);
-    };
-    for(let i=7;i<arr.length;i++){
-        let div = document.createElement("div");
-        let img = document.createElement("img");
-        div.setAttribute("Class",'Skill-div-2')
-        img.src = arr[i].icon;
-        let name = document.createElement("h5");
-        name.innerText = arr[i].name;
-        div.append(img,name);
-        container.append(div);
-    }
-}
 
 
 const sr = ScrollReveal({
@@ -127,7 +56,9 @@ sr.reveal('.About__Name+p',{delay:400})
 
 // ---Skills Animation
 sr.reveal('.Skill-div',{})
-sr.reveal('.Skill-div-2',{delay:200});
+sr.reveal('.Skill__Animation',{delay:200})
+sr.reveal('.Skill-div-2',{delay:400});
+sr.reveal('.Skill-bullet-point',{delay:600})
 
 // --Project Animation
 

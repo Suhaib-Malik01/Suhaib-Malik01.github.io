@@ -74,7 +74,7 @@
         <h1 id="About-Me" class="heading">About</h1>
         <div id="About-section">
             <div>
-                <img src="Components\Images\profile-pic (12).jpg" alt="">
+                <img class="About__Photo" src="Components\Images\profile-pic (12).jpg" alt="">
             </div>
             <div>
                 <h2 class="About__Name">Hi, I am <span>Suhaib</span></h2>
@@ -88,13 +88,56 @@
 
         <div id="Skills">
             <div>
-
+                <lottie-player class="Skill__Animation" src="Components\Images\illustration\7x0BIza2Ob.json"
+                    background="transparent" speed="1" style="width: 450px; height: 430px;" loop
+                    autoplay></lottie-player>
             </div>
-            <div >
-                <div class="Skill-div">
-                    <img src="" alt="">
-                    <h5></h5>
-
+            <div>
+                <div>
+                    <div class="Skill-div">
+                        <iconify-icon icon="logos:java"></iconify-icon>
+                        <h5>Java</h5>
+                    </div>
+                    <div class="Skill-div">
+                        <iconify-icon icon="vscode-icons:file-type-mysql"></iconify-icon>
+                        <h5>MySQL</h5>
+                    </div>
+                    <div class="Skill-div">
+                        <iconify-icon icon="logos:spring-icon"></iconify-icon>
+                        <h5>Spring</h5>
+                    </div>
+                    <div class="Skill-div">
+                        <iconify-icon icon="logos:hibernate"></iconify-icon>
+                        <h5>Hibernate</h5>
+                    </div>
+                    <div class="Skill-div">
+                        <iconify-icon icon="vscode-icons:file-type-maven"></iconify-icon>
+                        <h5>Maven</h5>
+                    </div>
+                    <div class="Skill-div">
+                        <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="Skill-div-2">
+                        <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="Skill-div-2">
+                        <iconify-icon icon="logos:javascript"></iconify-icon>
+                        <h5>JavaScript</h5>
+                    </div>
+                    <div class="Skill-div-2">
+                        <iconify-icon icon="mdi:git"></iconify-icon>
+                        <h5>Git</h5>
+                    </div>
+                </div>
+                <div class="Skill-bullet-point">
+                    <h4><iconify-icon inline icon="mingcute:lightning-fill" style="color: #ffa31a;"></iconify-icon>
+                        Experience with web development frameworks such as Spring or Hibernate</h4>
+                    <h4><iconify-icon inline icon="mingcute:lightning-fill" style="color: #ffa31a;"></iconify-icon>
+                        Familiarity with database design and MySQL</h4>
+                    <h4><iconify-icon inline icon="mingcute:lightning-fill" style="color: #ffa31a;"></iconify-icon>
+                        Experience with RESTful APIs and microservices architecture</h4>
                 </div>
 
             </div>
@@ -104,68 +147,112 @@
 
         <div id="Projects">
             <div class="Project-box fiverr">
-                <img src="Components\Images\Screenshot 2022-10-22 201325.png" alt="">
-
-                <div class="Info">
-                    <h3>Fiver Clone</h3>
-                    <p>Fiverr is an online freelance marketplace where you can sell gigs. It is a popular freelance
-                        website
-                        as well. On Fiverr, you can hire a freelancer as well as work as a freelancer</p>
-                    <h4>Tech Stack</h4>
-                    <div class="techStack">
-                        <i class='bx bxl-html5 box-icons'></i>
-                        <i class='bx bxl-css3 box-icons'></i>
-                        <i class='bx bxl-javascript box-icons'></i>
-                        <i class='bx bxl-bootstrap box-icons'></i>
-                    </div>
+                <div>
+                    <img src="Components\Images\Screenshot 2022-10-22 201325.png" alt="">
                 </div>
-                <div id="Project-button">
-                    <a href="https://fiverr-clone-22.netlify.app/" target="_blank"><button class="button-pr">Live</button></a>
-                    <a href="https://github.com/Suhaib-Malik01/Fiverr-Clone" target="_blank"><button class="button-pr">GitHub</button></a>
 
+                <div>
+                    <div class="Info">
+                        <h3>Fiver Clone</h3>
+                        <p>Fiverr is an online freelance marketplace where you can sell gigs. It is a popular freelance
+                            website
+                            as well. On Fiverr, you can hire a freelancer as well as work as a freelancer</p>
+                        <h4>Tech Stack</h4>
+                        <div class="techStack">
+                            <i class='bx bxl-html5 box-icons-pr'></i>
+                            <i class='bx bxl-css3 box-icons-pr'></i>
+                            <i class='bx bxl-javascript box-icons-pr'></i>
+                            <i class='bx bxl-bootstrap box-icons-pr'></i>
+                        </div>
+                    </div>
+                    <div id="Project-button">
+                        <a href="https://fiverr-clone-22.netlify.app/" target="_blank"><button
+                                class="button-pr">Live</button></a>
+                        <a href="https://github.com/Suhaib-Malik01/Fiverr-Clone" target="_blank"><button
+                                class="button-pr">GitHub</button></a>
+
+                    </div>
                 </div>
 
 
             </div>
             <div class="Project-box Animoto">
-                <img src="Components\Images\Screenshot 2022-10-22 201525.png" alt="">
-
-                <div class="Info">
-                    <h3>Animoto Clone</h3>
-                    <p>Animoto is a cloud-based video creation service that produces video from photos, video clips, and
-                        music into video slideshows, and customized web-based presentations.</p>
-                    <h4>Tech Stack</h4>
-                    <div class="techStack">
-                        <i class='bx bxl-html5 box-icons'></i>
-                        <i class='bx bxl-css3 box-icons'></i>
-                        <i class='bx bxl-javascript box-icons'></i>
-                    </div>
+                <div>
+                    <img src="Components\Images\Screenshot 2022-10-22 201525.png" alt="">
                 </div>
-                <div id="Project-button">
-                    <a href="https://animoto-website-clone.netlify.app/" target="_blank"><button class="button-pr">Live</button></a>
-                    <a href="https://github.com/Suhaib-Malik01/Animoto-Clone" target="_blank"><button class="button-pr">GitHub</button></a>
+
+                <div>
+                    <div class="Info">
+                        <h3>Animoto Clone</h3>
+                        <p>Animoto is a cloud-based video creation service that produces video from photos, video clips,
+                            and
+                            music into video slideshows, and customized web-based presentations.</p>
+                        <h4>Tech Stack</h4>
+                        <div class="techStack">
+                            <i class='bx bxl-html5 box-icons-pr'></i>
+                            <i class='bx bxl-css3 box-icons-pr'></i>
+                            <i class='bx bxl-javascript box-icons-pr'></i>
+                        </div>
+                    </div>
+                    <div id="Project-button">
+                        <a href="https://animoto-website-clone.netlify.app/" target="_blank"><button
+                                class="button-pr">Live</button></a>
+                        <a href="https://github.com/Suhaib-Malik01/Animoto-Clone" target="_blank"><button
+                                class="button-pr">GitHub</button></a>
+                    </div>
                 </div>
 
             </div>
             <div class="Project-box  Weather">
-                <img src="Components\Images\Screenshot 2022-10-22 201641.png" alt="">
-                <div class="Info">
-                    <h3>Weather App</h3>
-                    <p>Weather App is an OpenWeatherMap-based web App. Created using OpenWeatherMap API, Geolocation API
-                        for
-                        Location and Google map API for Live Location Map</p>
-                    <h4>Tech Stack</h4>
-                    <div class="techStack">
-                        <i class='bx bxl-html5 box-icons'></i>
-                        <i class='bx bxl-css3 box-icons'></i>
-                        <i class='bx bxl-javascript box-icons'></i>
+                <div>
+                    <img src="Components\Images\Screenshot 2022-10-22 201641.png" alt="">
+                </div>
+                <div>
+                    <div class="Info">
+                        <h3>Weather App</h3>
+                        <p>Weather App is an OpenWeatherMap-based web App. Created using OpenWeatherMap API, Geolocation
+                            API
+                            for
+                            Location and Google map API for Live Location Map</p>
+                        <h4>Tech Stack</h4>
+                        <div class="techStack">
+                            <i class='bx bxl-html5 box-icons-pr'></i>
+                            <i class='bx bxl-css3 box-icons-pr'></i>
+                            <i class='bx bxl-javascript box-icons-pr'></i>
+                        </div>
+                    </div>
+                    <div id="Project-button">
+                        <a href="https://openweather-info-app.netlify.app/" target="_blank"><button
+                                class="button-pr">Live</button></a>
+                        <a href="https://github.com/Suhaib-Malik01/Weather-App" target="_blank"><button
+                                class="button-pr">GitHub</button></a>
                     </div>
                 </div>
-                <div id="Project-button">
-                    <a href="https://openweather-info-app.netlify.app/" target="_blank"><button
-                            class="button-pr">Live</button></a>
-                    <a href="https://github.com/Suhaib-Malik01/Weather-App" target="_blank"><button
-                            class="button-pr">GitHub</button></a>
+
+            </div>
+            <div class="Project-box  Weather">
+                <div>
+                    <img src="Components\Images\Screenshot 2022-12-19 140836.png" alt="">
+                </div>
+                <div>
+                    <div class="Info">
+                        <h3>Online Banking Management</h3>
+                        <p>This project is to maintain the accounts like saving account, withdrawing and depositing
+                            money
+                            . Bank
+                            provides account number to the customer for dealing transactions in the bank.</p>
+                        <h4>Tech Stack</h4>
+                        <div class="techStack">
+                            <iconify-icon icon="mdi:language-java" class="box-icons-pr"></iconify-icon>
+                            <iconify-icon icon="cib:mysql" class="box-icons-pr"></iconify-icon>
+                        </div>
+                    </div>
+                    <div id="Project-button">
+                        <a href="https://drive.google.com/file/d/11EyBqEDMcdWqp0xLGJIq0YUDhmDEDF-F/view?usp=sharing"
+                            target="_blank"><button class="button-pr">Video</button></a>
+                        <a href="https://github.com/Suhaib-Malik01/Online-Banking-System" target="_blank"><button
+                                class="button-pr">GitHub</button></a>
+                    </div>
                 </div>
 
             </div>
@@ -194,9 +281,12 @@
             <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
             <button class="Contact-button">Send</button>
         </div>
-
-
-
+        <div id="Contact-info">
+            <p><iconify-icon inline icon="material-symbols:phone-enabled-sharp" style="color: #3e6ff4;"
+                    rotate="90deg"></iconify-icon> Phone: <a href="tel:6397303880">6397303880</a></p>
+            <p><iconify-icon inline icon="ic:round-email" style="color: #3e6ff4;"></iconify-icon> Email: <a
+                    href="Mailto:suhaib.malik9691@gmail.com">suhaib.malik9691@gmail.com</a></p>
+        </div>
     </body>
 </main>
 <footer id="footer">
@@ -210,9 +300,7 @@
         </a>
     </div>
     <div id="Contact">
-        <h4>Contact Me: </h4>
-        <p>Phone: <a href="tel:6397303880">6397303880</a></p>
-        <p>Email: <a href="Mailto:suhaib.malik9691@gmail.com">suhaib.malik9691@gmail.com</a></p>
+
     </div>
 </footer>
 

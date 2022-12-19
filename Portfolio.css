@@ -168,7 +168,7 @@ body {
 
 #Resume-button:hover {
     cursor: pointer;
-    background-color: #2354dc;
+    box-shadow: var(--first-color) 0px 3px 12px;
 }
 
 #nav-toggle {
@@ -176,6 +176,7 @@ body {
 }
 
 .heading {
+    padding-top: 5rem;
     border-bottom: 3px solid var(--first-color);
 }
 
@@ -225,7 +226,8 @@ body {
 
 #About-Me {
     margin: auto;
-    margin: 10rem auto 2.5rem auto;
+    margin: 5rem auto 2.5rem auto;
+    padding-top: 5rem;
     color: var(--first-color);
     text-align: center;
     max-width: 100px;
@@ -273,51 +275,65 @@ body {
 
 #Project-Header {
     max-width: fit-content;
-    margin: 3rem auto 1.5rem auto;
+    margin: 0rem auto 1.5rem auto;
     color: var(--first-color);
     text-align: center;
 }
 
 #Skills-Header {
     max-width: fit-content;
-    margin: var(--top-height) auto 1.5rem auto;
+    margin: 0rem auto auto;
     color: var(--first-color);
+    padding-top: 5rem;
     text-align: center;
 }
 
 #Skills {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem 0rem;
+}
+
+#Skills>:nth-child(2)>:first-child {
     display: grid;
     width: 93%;
     margin: auto;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
-    align-items: center;
-    row-gap: 20px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 
-#Skills div {
-    text-align: center;
+#Skills>:nth-child(2)>:first-child div {
     background-color: rgb(255, 255, 255);
-    height: 5rem;
-    width: 5.1rem;
+    height: 4rem;
+    width: 4.5rem;
+    text-align: center;
     margin-top: 10px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
     align-items: center;
-    padding: 15px 8px 5px 8px;
+    padding: 12px 8px 8px 8px;
     border-radius: 50%;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
+#Skills>:nth-child(2)>:first-child div iconify-icon {
+    font-size: 35px;
+
+}
+
+#Skills h4 {
+    color: gray;
+    font-weight: lighter;
+}
+
 #Skills div h5 {
     margin-top: -0.10rem;
     color: var(--second-color);
-    font-size: 12px;
+    font-size: 11px;
 }
+
 
 #Projects {
     display: grid;
@@ -333,9 +349,14 @@ body {
 }
 
 .Project-box {
-    width: 100%;
+    margin: auto;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.Project-box>:first-child {
+    width: 100%;
+    height: auto;
 }
 
 .Info {
@@ -348,7 +369,13 @@ body {
     font-size: 14px;
     color: var(--second-color);
     text-align: justify;
-    height: 80px;
+    height: auto;
+    /* border: 1px solid; */
+    padding-bottom: 0px;
+}
+
+.Animoto {
+    flex-direction: row-reverse;
 }
 
 .Info h3,
@@ -366,9 +393,17 @@ h4 {
     color: var(--second-color);
 }
 
+.box-icons-pr {
+    font-size: 2.2rem;
+    transition: 0.2s;
+    margin-right: 0px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
 .Project-box img {
     width: 100%;
-    height: 185px;
+    height: auto;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -474,7 +509,7 @@ textarea {
 #footer>:first-child {
     display: flex;
     margin: auto;
-    margin-right: 33rem;
+
 }
 
 .box-icons-footer {
@@ -489,6 +524,10 @@ textarea {
 
 .box-icons-footer:hover {
     cursor: pointer;
+}
+
+.pr-img {
+    width: 60px;
 }
 
 #Contact {
@@ -529,6 +568,18 @@ textarea {
 #Yoga-Illustration {
     width: 550px;
     height: 480px;
+}
+
+#Contact-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#Contact-info a {
+
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width:768px) {
@@ -688,11 +739,22 @@ textarea {
 
 
     #Skills {
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        row-gap: 15px;
+        flex-direction: column-reverse;
+        row-gap: 0px;
+    }
 
+    #Skills>:first-child {
+        display: none;
+    }
+
+    #Skills>:nth-child(2)>:first-child {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #Skills>:nth-child(2) {
+        width: 95%;
+        margin: auto;
+        text-align: center;
     }
 
 
@@ -702,6 +764,14 @@ textarea {
         gap: 30px;
         padding: 0px 10px;
         margin: auto;
+    }
+
+    .Project-box {
+        flex-direction: column;
+    }
+
+    .Project-box>:first-child {
+        width: auto;
     }
 
     #Contact-input-box {
@@ -745,6 +815,11 @@ textarea {
     #Github-section>:last-child>:last-child {
         margin-top: -1.8rem;
         margin-bottom: -2rem;
+    }
+
+    #Contact-info {
+        flex-direction: column;
+        text-align: center;
     }
 
 
@@ -864,7 +939,7 @@ textarea {
     }
 
     #Photo {
-        flex-direction: column;
+
         align-self: flex-end;
         margin-right: 4rem;
         margin-bottom: -2rem;
@@ -906,7 +981,7 @@ textarea {
     }
 
     #About-section img {
-        width: 100%;
+        width: 60%;
         border-radius: 10%;
     }
 
@@ -916,6 +991,10 @@ textarea {
         align-items: center;
         row-gap: 15px;
 
+    }
+
+    #Skills>:first-child {
+        display: none;
     }
 
     #Projects {
@@ -943,12 +1022,6 @@ textarea {
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-direction: column;
-    }
-
-    #Github-section>:last-child {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     #Contact {
