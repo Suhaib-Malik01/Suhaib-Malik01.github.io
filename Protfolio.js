@@ -38,8 +38,8 @@ window.onload = function () {
 
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '80px',
-    duration: 2000,
+    distance: '70px',
+    duration: 1500,
     reset: true
 })
 
