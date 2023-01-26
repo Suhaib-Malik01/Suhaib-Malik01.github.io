@@ -30,7 +30,7 @@ navlink.forEach(n => n.addEventListener('click',linkAction))
 
 window.onload = function () {
     GitHubCalendar(".calendar", "Suhaib-Malik01");
-    GitHubCalendar(".calendar", "Suhaib-Malik01", { responsive: true });
+    GitHubCalendar(".calendar", "Suhaib-Malik01", { responsive: true ,global_stats:false});
 }
 
 
@@ -40,7 +40,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '70px',
     duration: 1500,
-    reset: true
+    reset: false
 })
 
 //--Home Animation
