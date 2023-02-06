@@ -15,10 +15,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <main>
-    <!-- <img src="Components\Images\Untitled design (5).png" width="100%" height="850px" alt=""> -->
 
     <body>
-        <!-- NavBar -->
         <header>
             <div id="nav">
                 <a href="#" class="name">Suhaib</a>
@@ -78,7 +76,7 @@
             </div>
             <div>
                 <h2 class="About__Name">Hi, I am <span>Suhaib</span></h2>
-                <p>A passionate JAVA Back-End Developer, Problem Solving mindset and quick learner who
+                <p>A passionate Java Back-End Developer, Problem Solving mindset and quick learner who
                     possesses the ability to adapt to new environments quickly. Looking for a challenging role in the
                     industry to utilize my skill and learning.</p>
             </div>
@@ -173,8 +171,6 @@
 
                     </div>
                 </div>
-
-
             </div>
             <div class="Project-box Animoto">
                 <div>
@@ -275,18 +271,23 @@
 
         <h1 id="Contact-header" class="heading">Contact</h1>
 
-        <div id="Contact-input-box">
-            <input class="in-name" type="text" placeholder="Name">
-            <input class="in-email" type="email" placeholder="Email">
-            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-            <button class="Contact-button">Send</button>
-        </div>
+        <form id="Contact-input-box" onsubmit="sendEmail() ; reset() ; return false;">
+            <input id="name" type="text" placeholder="Name" required>
+
+            <input id="email" type="email" placeholder="Email" required>
+
+            <textarea name="" id="description" cols="0" rows="10" required></textarea>
+
+            <button class="Contact-button" type="submit">Send</button>
+        </form>
         <div id="Contact-info">
             <p><iconify-icon inline icon="material-symbols:phone-enabled-sharp" style="color: #3e6ff4;"
                     rotate="90deg"></iconify-icon> Phone: <a href="tel:6397303880">6397303880</a></p>
             <p><iconify-icon inline icon="ic:round-email" style="color: #3e6ff4;"></iconify-icon> Email: <a
                     href="Mailto:suhaib.malik9691@gmail.com">suhaib.malik9691@gmail.com</a></p>
         </div>
+
+        
     </body>
 </main>
 <footer id="footer">
@@ -307,6 +308,8 @@
 </html>
 
 <script src="Protfolio.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
