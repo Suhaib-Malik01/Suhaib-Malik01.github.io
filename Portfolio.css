@@ -212,9 +212,8 @@ body {
     color: white;
 }
 
-.box-icons:hover {
+.box-icons:hover, #leetcode-icon:hover {
     cursor: pointer;
-
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -364,7 +363,6 @@ body {
     color: var(--second-color);
     text-align: justify;
     height: auto;
-    /* border: 1px solid; */
     padding-bottom: 0px;
 }
 
@@ -383,17 +381,25 @@ h4 {
     font-size: 40px;
     align-items: center;
     width: 35%;
+    gap: 5px;
     margin-top: -1rem;
     color: var(--second-color);
 }
 
 .box-icons-pr {
-    font-size: 2.2rem;
-    transition: 0.2s;
+    font-size: 30px;
     margin-right: 0px;
     border-radius: 50%;
-    transition: 0.4s;
 }
+#leetcode-icon{
+    font-size: 28px;
+    background-color: black;
+    color: orange;
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 0.3s;
+}
+
 
 .Project-box img {
     width: 100%;
