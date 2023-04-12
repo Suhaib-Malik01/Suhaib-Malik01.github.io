@@ -289,10 +289,10 @@ body {
 }
 
 #Skills>:nth-child(2)>:first-child {
-    display: grid;
-    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin: auto;
-    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     gap: 20px;
 }
