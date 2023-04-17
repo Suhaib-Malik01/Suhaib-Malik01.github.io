@@ -347,6 +347,7 @@ body {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+
 .Project-box>:first-child {
     width: 100%;
     height: auto;
@@ -366,9 +367,6 @@ body {
     padding-bottom: 0px;
 }
 
-.Animoto {
-    flex-direction: row-reverse;
-}
 
 .Info h3,
 h4 {
@@ -422,14 +420,14 @@ h4 {
     font-size: 15px;
     border-radius: 10px;
     box-shadow: inset 0 0 0 0 var(--second-color);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .button-pr:hover {
     cursor: pointer;
     color: black;
     border: 1px solid var(--second-color);
-    box-shadow: inset 90px 0 0 0 white;
+    box-shadow: inset 90px 0 0 white;
 }
 
 .calendar {
