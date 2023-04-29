@@ -101,7 +101,7 @@ body {
     color: var(--first-color);
 }
 
-#about {
+#home {
     display: flex;
     justify-content: space-between;
     margin-top: var(--top-height);
@@ -109,7 +109,7 @@ body {
 }
 
 
-#about>:first-child {
+#home>:first-child {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -117,14 +117,14 @@ body {
 }
 
 
-#about>:last-child {
+#home>:last-child {
     display: flex;
     justify-content: right;
     width: 45%;
     align-items: center;
 }
 
-#About-section h2 {
+#about h2 {
     color: var(--second-color);
 }
 
@@ -239,7 +239,7 @@ body {
 }
 
 
-#About-section {
+#about {
     margin-top: 20;
     text-align: justify;
     display: flex;
@@ -249,18 +249,18 @@ body {
 }
 
 
-#About-section>:last-child {
+#about>:last-child {
     justify-content: center;
     display: flex;
     font-size: 18px;
     flex-direction: column;
 }
 
-#About-section>:last-child h2 {
+#about>:last-child h2 {
     margin-bottom: -0.5rem;
 }
 
-#About-section img {
+#about img {
     width: 100%;
     border-radius: 10%;
 }
@@ -280,14 +280,14 @@ body {
     text-align: center;
 }
 
-#Skills {
+#skills {
     display: flex;
     align-items: center;
     gap: 5rem;
     padding: 1rem 0rem;
 }
 
-#Skills>:nth-child(2)>:first-child {
+#skills>:nth-child(2)>:first-child {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -297,7 +297,7 @@ body {
 }
 
 
-#Skills>:nth-child(2)>:first-child div {
+#skills>:nth-child(2)>:first-child div {
     background-color: rgb(255, 255, 255);
     height: 4rem;
     width: 4.5rem;
@@ -310,24 +310,24 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
-#Skills>:nth-child(2)>:first-child div iconify-icon {
+#skills>:nth-child(2)>:first-child div iconify-icon {
     font-size: 35px;
 
 }
 
-#Skills h4 {
+#skills h4 {
     color: gray;
     font-weight: lighter;
 }
 
-#Skills div h5 {
+#skills div h5 {
     margin-top: -0.10rem;
     color: var(--second-color);
     font-size: 11px;
 }
 
 
-#Projects {
+#projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -440,7 +440,7 @@ h4 {
     border: 1px solid;
 }
 
-#About-section>h2+p {
+#about>h2+p {
     font-size: 17px;
 }
 
@@ -453,7 +453,7 @@ h4 {
 
 }
 
-#Contact-input-box {
+#contact {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -462,12 +462,12 @@ h4 {
 
 }
 
-#Skills img {
+#skills img {
     width: 50%;
 }
 
 
-#Contact-input-box input,
+#contact input,
 textarea {
     border-radius: 10px;
     height: 40px;
@@ -476,12 +476,12 @@ textarea {
     border: 1px solid black;
 }
 
-#Contact-input-box textarea {
+#contact textarea {
     padding: 8px 10px;
     height: 200px;
 }
 
-#Contact-input-box>:last-child {
+#contact>:last-child {
     padding: 10px 15px;
     width: 5rem;
     margin: auto;
@@ -494,7 +494,7 @@ textarea {
     transition: all 0.5s;
 }
 
-#Contact-input-box>:last-child:hover {
+#contact>:last-child:hover {
     cursor: pointer;
     box-shadow: inset 90px 0 0 0 white;
     color: black;
@@ -687,15 +687,15 @@ textarea {
         margin-top: 2.5rem;
     }
 
-    #about {
+    #home {
         height: calc(100vh- 3rem);
         width: 100%;
         flex-direction: column-reverse;
         padding: 3rem 0rem;
     }
 
-    #about>:first-child,
-    #about>:last-child {
+    #home>:first-child,
+    #home>:last-child {
         margin-left: 2rem;
         /* border: 1px solid; */
     }
@@ -722,18 +722,18 @@ textarea {
         margin-top: 4.5rem;
     }
 
-    #About-section {
+    #about {
         width: 90%;
         text-align: center;
         gap: 1rem;
     }
 
-    #About-section>:first-child {
+    #about>:first-child {
         margin: auto;
         width: 70%;
     }
 
-    #About-section {
+    #about {
         flex-direction: column;
         margin: auto;
     }
@@ -743,27 +743,27 @@ textarea {
     }
 
 
-    #Skills {
+    #skills {
         flex-direction: column-reverse;
         row-gap: 0px;
     }
 
-    #Skills>:first-child {
+    #skills>:first-child {
         display: none;
     }
 
-    #Skills>:nth-child(2)>:first-child {
+    #skills>:nth-child(2)>:first-child {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    #Skills>:nth-child(2) {
+    #skills>:nth-child(2) {
         width: 95%;
         margin: auto;
         text-align: center;
     }
 
 
-    #Projects {
+    #projects {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
@@ -779,7 +779,7 @@ textarea {
         width: auto;
     }
 
-    #Contact-input-box {
+    #contact {
         width: 90%;
     }
 
@@ -930,21 +930,20 @@ textarea {
         margin-top: 2.5rem;
     }
 
-    #about {
+    #home {
         height: calc(100vh- 3rem);
         width: 100%;
         flex-direction: column-reverse;
         padding: 3rem 0rem;
     }
 
-    #about>:first-child,
-    #about>:last-child {
+    #home>:first-child,
+    #home>:last-child {
         margin-left: 2rem;
         /* border: 1px solid; */
     }
 
     #Photo {
-
         align-self: flex-end;
         margin-right: 4rem;
         margin-bottom: -2rem;
@@ -965,18 +964,18 @@ textarea {
         margin-top: 4.5rem;
     }
 
-    #About-section {
+    #about {
         width: 90%;
         text-align: center;
         gap: 1rem;
     }
 
-    #About-section>:first-child {
+    #about>:first-child {
         margin: auto;
         width: 70%;
     }
 
-    #About-section {
+    #about {
         flex-direction: column;
         margin: auto;
     }
@@ -985,12 +984,12 @@ textarea {
         text-align: center;
     }
 
-    #About-section img {
+    #about img {
         width: 60%;
         border-radius: 10%;
     }
 
-    #Skills {
+    #skills {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
@@ -998,11 +997,11 @@ textarea {
 
     }
 
-    #Skills>:first-child {
+    #skills>:first-child {
         display: none;
     }
 
-    #Projects {
+    #projects {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -1010,7 +1009,7 @@ textarea {
         margin: auto;
     }
 
-    #Contact-input-box {
+    #contact {
         width: 90%;
     }
 
@@ -1148,15 +1147,15 @@ textarea {
         margin-top: 2.5rem;
     }
 
-    #about {
+    #home {
         height: calc(100vh- 3rem);
         width: 100%;
         flex-direction: column-reverse;
         padding: 3rem 0rem;
     }
 
-    #about>:first-child,
-    #about>:last-child {
+    #home>:first-child,
+    #home>:last-child {
         margin-left: 2rem;
     }
 
@@ -1182,32 +1181,28 @@ textarea {
         margin-top: 4.5rem;
     }
 
-    #About-section {
+    #about {
         width: 90%;
-        text-align: center;
         gap: 1rem;
     }
 
-    #About-section>:first-child {
+    #about>:first-child {
         margin: auto;
-        width: 70%;
+        width: 60%;
     }
 
-    #About-section {
-        flex-direction: column;
+    #about {
         margin: auto;
+        gap: 3rem;
     }
 
     #about-text h2 {
         text-align: center;
     }
 
-    #about-photo {
+    
 
-        text-align: center;
-    }
-
-    #Skills {
+    #skills {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
@@ -1215,7 +1210,7 @@ textarea {
 
     }
 
-    #Projects {
+    #projects {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -1223,8 +1218,8 @@ textarea {
         margin: auto;
     }
 
-    #Contact-input-box {
-        width: 90%;
+    #contact {
+        max-width: 40%;
     }
 
     #Github-section {
@@ -1247,11 +1242,11 @@ textarea {
 
     #Github-section>:last-child {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
     #Contact {
+        
         color: rgb(223, 223, 223);
         align-items: center;
     }

@@ -22,12 +22,12 @@
                 <a href="#" class="name">Suhaib</a>
                 <div class="navigation" id="nav">
                     <ul id="nav-list">
-                        <li class="nav-item"><a href="#about" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#About-Me" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="#Skills-Header" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#Project-Header" class="nav-link">Project</a></li>
-                        <li class="nav-item"><a href="#Contact-header" class="nav-link">Contact</a></li>
-                        <a class="nav-link" href="Components\Documents\fw20_0925-Suhaib-Malik-Resume.pdf" download  onclick="window.open('https://drive.google.com/file/d/1LluuyCS5PbhSXWN45eh9EvrRbY0StZPH/view')">
+                        <li class="nav-item"><a href="#about" class="nav-link active home">Home</a></li>
+                        <li class="nav-item"><a href="#About-Me" class="nav-link about">About Me</a></li>
+                        <li class="nav-item"><a href="#Skills-Header" class="nav-link skills">Skills</a></li>
+                        <li class="nav-item"><a href="#Project-Header" class="nav-link projects">Project</a></li>
+                        <li class="nav-item"><a href="#Contact-header" class="nav-link contact">Contact</a></li>
+                        <a class="nav-link resume" href="Components\Documents\fw20_0925-Suhaib-Malik-Resume.pdf" download  onclick="window.open('https://drive.google.com/file/d/1LluuyCS5PbhSXWN45eh9EvrRbY0StZPH/view')">
                             <li class="nav-item">Resume</li>
                         </a>
                     </ul>
@@ -38,7 +38,7 @@
             </div>
         </header>
 
-        <div id="about">
+        <div id="home">
             <div id="Introduction">
                 <h1 class="home__title">Hi,<br> I'am <span class="Name-color">Suhaib</span><br>Java Backend Developer
                 </h1>
@@ -69,13 +69,13 @@
         </div>
 
         <h1 id="About-Me" class="heading">About</h1>
-        <div id="About-section">
+        <div id="about">
             <div>
                 <img class="About__Photo" src="Components\Images\profile-pic (12).jpg" alt="">
             </div>
             <div>
-                <h2 class="About__Name">Hi, I am <span>Suhaib</span></h2>
-                <p>A passionate Java Back-End Developer, with problem
+                <h2 class="About__Name" id="user-detail-name">Hi, I am <span>Suhaib</span></h2>
+                <p id="user-detail-intro">A passionate Java Back-End Developer, with problem
                     solving mindset and a quick learner who possesses
                     the ability to adapt to new environments quickly.
                     Looking for a challenging role in the industry to utilize
@@ -85,7 +85,7 @@
         </div>
         <h1 id="Skills-Header" class="heading">Skills</h1>
 
-        <div id="Skills">
+        <div id="skills">
             <div>
                 <lottie-player class="Skill__Animation" src="Components\Images\illustration\7x0BIza2Ob.json"
                     background="transparent" speed="1" style="width: 450px; height: 430px;" loop
@@ -144,7 +144,7 @@
 
         <h1 id="Project-Header" class="heading">Projects</h1>
 
-        <div id="Projects">
+        <div id="projects">
             <div class="Project-box  Weather">
                 <div>
                     <img src="https://camo.githubusercontent.com/2d893926146c2674f5177916554e6865bf40faa0c732f5ccc2751c0e63cdc779/68747470733a2f2f746f6e6561726d652e636f6d2f696d616765732f7468756d62732f303030323435335f66656174757265253230696d6167655f313337352e706e67" alt="">
@@ -299,7 +299,7 @@
 
         <h1 id="Contact-header" class="heading">Contact</h1>
 
-        <form id="Contact-input-box" onsubmit="sendEmail() ; reset() ; return false;">
+        <form id="contact" onsubmit="sendEmail() ; reset() ; return false;">
             <input id="name" type="text" placeholder="Name" required>
 
             <input id="email" type="email" placeholder="Email" required>
