@@ -40,7 +40,7 @@ body {
 
 
 
-#nav {
+#nav-menu {
     height: var(--header-height);
     position: fixed;
     min-width: 1100px;
@@ -596,7 +596,7 @@ textarea {
         width: auto;
     }
 
-    #nav {
+    #nav-menu {
         min-width: auto;
         gap: 13rem;
         padding: 0px 20px;
@@ -841,7 +841,7 @@ textarea {
         width: 800px;
     }
 
-    #nav {
+    #nav-menu {
         min-width: auto;
         gap: 13rem;
         padding: 0px 20px;
@@ -1059,7 +1059,7 @@ textarea {
         width: auto;
     }
 
-    #nav {
+    #nav-menu {
         min-width: auto;
         gap: 13rem;
         padding: 0px 20px;

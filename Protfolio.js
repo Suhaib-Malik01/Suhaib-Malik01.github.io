@@ -11,7 +11,7 @@ let showMenu = (toggleId, navId) => {
     });
   }
 };
-showMenu("nav-toggle", "nav-menu");
+showMenu("nav-toggle", "nav");
 
 const navlink = document.querySelectorAll(".nav-link");
 
@@ -19,7 +19,7 @@ function linkAction() {
   navlink.forEach((n) => n.classList.remove("active"));
   this.classList.add("active");
 
-  let navMenu = document.getElementById("nav-menu");
+  let navMenu = document.getElementById("nav");
 
   navMenu.classList.remove("show");
 }
