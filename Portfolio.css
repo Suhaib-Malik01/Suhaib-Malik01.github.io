@@ -341,14 +341,14 @@ body {
     margin: var(--header-height) auto;
 }
 
-.Project-box {
+.project-card {
     margin: auto;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
-.Project-box>:first-child {
+.project-card>:first-child {
     width: 100%;
     height: auto;
 }
@@ -373,7 +373,7 @@ h4 {
     color: var(--second-color);
 }
 
-.techStack {
+.project-tech-stack {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     font-size: 40px;
@@ -399,7 +399,7 @@ h4 {
 }
 
 
-.Project-box img {
+.project-card img {
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0px 0px;
@@ -771,11 +771,11 @@ textarea {
         margin: auto;
     }
 
-    .Project-box {
+    .project-card {
         flex-direction: column;
     }
 
-    .Project-box>:first-child {
+    .project-card>:first-child {
         width: auto;
     }
 

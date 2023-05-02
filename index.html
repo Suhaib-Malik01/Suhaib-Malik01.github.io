@@ -71,7 +71,7 @@
         <h1 id="About-Me" class="heading">About</h1>
         <div id="about">
             <div>
-                <img class="About__Photo" src="Components\Images\profile-pic (12).jpg" alt="">
+                <img class="About__Photo home-img" src="Components\Images\profile-pic (12).jpg" alt="">
             </div>
             <div>
                 <h2 class="About__Name" id="user-detail-name">Hi, I am <span>Suhaib</span></h2>
@@ -145,16 +145,16 @@
         <h1 id="Project-Header" class="heading">Projects</h1>
 
         <div id="projects">
-            <div class="Project-box  Weather">
+            <div class="project-card Weather">
                 <div>
                     <img src="https://camo.githubusercontent.com/2d893926146c2674f5177916554e6865bf40faa0c732f5ccc2751c0e63cdc779/68747470733a2f2f746f6e6561726d652e636f6d2f696d616765732f7468756d62732f303030323435335f66656174757265253230696d6167655f313337352e706e67" alt="">
                 </div>
                 <div>
                     <div class="Info">
-                        <h3>Baked Delight</h3>
-                        <p>The BakedDelight is a REST API, which allows Customers to browse the Products, perform all the basic fundamental CRUD operations and place Orders as per their requirements.</p>
+                        <h3 class="project-title">Baked Delight</h3>
+                        <p class="project-description">The BakedDelight is a REST API, which allows Customers to browse the Products, perform all the basic fundamental CRUD operations and place Orders as per their requirements.</p>
                         <h4>Tech Stack</h4>
-                        <div class="techStack">
+                        <div class="project-tech-stack">
                             <iconify-icon icon="mdi:language-java" class="box-icons-pr"></iconify-icon>
                             <iconify-icon icon="bxl:spring-boot" class="box-icons-pr"></iconify-icon>
                             <iconify-icon icon="simple-icons:hibernate" class="box-icons-pr"></iconify-icon>
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div id="Project-button">
-                        <a href="https://drive.google.com/file/d/1wQUWUFBm5QPZXeffzl1EeGKJJhvOpOU9/view"
+                        <a  href="https://drive.google.com/file/d/1wQUWUFBm5QPZXeffzl1EeGKJJhvOpOU9/view"
                             target="_blank"><button class="button-pr">Video</button></a>
                         <a href="https://github.com/Suhaib-Malik01/BakedDelight" target="_blank"><button
                                 class="button-pr">GitHub</button></a>
@@ -171,7 +171,7 @@
                 </div>
 
             </div>
-            <div class="Project-box  Weather">
+            <div class="project-card  Weather">
                 <div>
                     <img src="Components\Images\Banking-system-img.png" alt="">
                 </div>
@@ -183,7 +183,7 @@
                             . Bank
                             provides account number to the customer for dealing transactions in the bank.</p>
                         <h4>Tech Stack</h4>
-                        <div class="techStack">
+                        <div class="project-tech-stack">
                             <iconify-icon icon="mdi:language-java" class="box-icons-pr"></iconify-icon>
                             <iconify-icon icon="cib:mysql" class="box-icons-pr"></iconify-icon>
                         </div>
@@ -197,7 +197,7 @@
                 </div>
 
             </div>
-            <div class="Project-box fiverr">
+            <div class="project-card fiverr">
                 <div>
                     <img src="Components\Images\Fiverr.png" alt="">
                 </div>
@@ -209,7 +209,7 @@
                             website
                             as well. On Fiverr, you can hire a freelancer as well as work as a freelancer</p>
                         <h4>Tech Stack</h4>
-                        <div class="techStack">
+                        <div class="project-tech-stack">
                             <i class='bx bxl-html5 box-icons-pr'></i>
                             <i class='bx bxl-css3 box-icons-pr'></i>
                             <i class='bx bxl-javascript box-icons-pr'></i>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <div class="Project-box Animoto">
+            <div class="project-card Animoto">
                 <div>
                     <img src="Components\Images\Animoto-Img.png" alt="">
                 </div>
@@ -237,7 +237,7 @@
                             and
                             music into video slideshows, and customized web-based presentations.</p>
                         <h4>Tech Stack</h4>
-                        <div class="techStack">
+                        <div class="project-tech-stack">
                             <i class='bx bxl-html5 box-icons-pr'></i>
                             <i class='bx bxl-css3 box-icons-pr'></i>
                             <i class='bx bxl-javascript box-icons-pr'></i>
@@ -252,7 +252,7 @@
                 </div>
 
             </div>
-            <div class="Project-box  Weather">
+            <div class="project-card  Weather">
                 <div>
                     <img src="Components\Images\Weather.png" alt="">
                 </div>
@@ -264,7 +264,7 @@
                             for
                             Location and Google map API for Live Location Map</p>
                         <h4>Tech Stack</h4>
-                        <div class="techStack">
+                        <div class="project-tech-stack">
                             <i class='bx bxl-html5 box-icons-pr'></i>
                             <i class='bx bxl-css3 box-icons-pr'></i>
                             <i class='bx bxl-javascript box-icons-pr'></i>
@@ -310,9 +310,9 @@
         </form>
         <div id="Contact-info">
             <p><iconify-icon inline icon="material-symbols:phone-enabled-sharp" style="color: #3e6ff4;"
-                    rotate="90deg"></iconify-icon> Phone: <a href="tel:6397303880">6397303880</a></p>
+                    rotate="90deg"></iconify-icon> Phone: <a id="contact-phone" href="tel:6397303880">6397303880</a></p>
             <p><iconify-icon inline icon="ic:round-email" style="color: #3e6ff4;"></iconify-icon> Email: <a
-                    href="Mailto:suhaib.malik9691@gmail.com">suhaib.malik9691@gmail.com</a></p>
+                 id="contact-email"   href="Mailto:suhaib.malik9691@gmail.com">suhaib.malik9691@gmail.com</a></p>
         </div>
 
         
@@ -320,9 +320,9 @@
 </main>
 <footer id="footer">
     <div>
-        <a href="https://www.linkedin.com/in/suhaib-malik01/" target="_blank"><i
+        <a id="contact-linkedin" href="https://www.linkedin.com/in/suhaib-malik01/" target="_blank"><i
                 class='bx bxl-linkedin box-icons-footer'></i></a>
-        <a href="https://github.com/Suhaib-Malik01" target="_blank"><i class='bx bxl-github box-icons-footer'></i></a>
+        <a id="contact-github" href="https://github.com/Suhaib-Malik01" target="_blank"><i class='bx bxl-github box-icons-footer'></i></a>
 
         <a href="Mailto:suhaib.malik9691@gmail.com">
             <i class='bx bx-envelope box-icons-footer'></i>
