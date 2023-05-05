@@ -82,7 +82,7 @@ sr.reveal(".About__Name", { delay: 200 });
 sr.reveal(".About__Name+p", { delay: 400 });
 
 // ---Skills Animation
-sr.reveal(".Skill-div", {});
+sr.reveal(".skills-card", {});
 sr.reveal(".Skill__Animation", { delay: 200 });
 sr.reveal(".Skill-div-2", { delay: 400 });
 sr.reveal(".Skill-bullet-point", { delay: 600 });

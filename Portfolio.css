@@ -144,7 +144,7 @@ body {
     margin-top: 5rem;
 }
 
-#Resume-button {
+#resume-button-2 {
     padding: 10px 20px;
     width: 7rem;
     border-radius: 5px;
@@ -156,7 +156,7 @@ body {
     transition: all 0.6s ease;
 }
 
-#Resume-button:hover {
+#resume-button-2:hover {
     cursor: pointer;
     box-shadow: inset 110px 0 0 0 white;
     color: black;
@@ -730,7 +730,7 @@ textarea {
 
     #about>:first-child {
         margin: auto;
-        width: 70%;
+        width: 50%;
     }
 
     #about {
