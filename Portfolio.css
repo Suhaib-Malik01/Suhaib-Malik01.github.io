@@ -89,7 +89,7 @@ body {
 }
 
 
-/* Home */
+
 .name {
     color: var(--first-color);
     font-weight: bolder;
@@ -118,7 +118,7 @@ body {
 #home>:last-child {
     display: flex;
     justify-content: right;
-    width: 45%;
+    max-width: 45%;
     align-items: center;
 }
 
@@ -832,10 +832,11 @@ textarea {
 @media screen and (min-width:768px) and (max-width:991px) {
     body {
         width: auto;
+        margin: auto;
     }
 
     main {
-        width: 800px;
+        margin: auto;
     }
 
     #nav-menu {
